@@ -1,0 +1,69 @@
+
+
+/** Header y Navegacion **/
+.nombre-sitio {
+	margin-top: 5rem;
+	text-align: center;
+}
+.degradado {
+	color: transparent;
+	background: linear-gradient(to right, #56f43e 0%, #193ef8 100% );
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+.contenedor-navegacion {
+	border-top: .1rem solid #e1e1e1;
+}
+.nav-principal {
+	padding: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	a {
+		position: relative;
+		display: block;
+		padding: 5px;
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background: linear-gradient(to right, #56f43e 0%, #037bc0 100% );
+			z-index: 1;
+			transform: scaleX(0);
+			transform-origin: center;
+			transition: transform 0.5s ease-in-out;
+		}
+		&:hover {
+			&::before {
+				transform: scaleX(1);
+				color: $blanco;
+			}
+		}
+	}
+}
+.nav-principal[data-animation="center"] {
+	a {
+		&::before {
+			transform-origin: center;
+		}
+	}
+}
+.hero {
+	background-image: url(../img/posible-hero-new-2.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 25rem;
+}
+@media (min-width: 768px) {
+	.nav-principal {
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	.hero {
+		height: 55rem;
+	}
+}

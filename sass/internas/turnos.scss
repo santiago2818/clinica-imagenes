@@ -1,0 +1,51 @@
+
+
+/* Formulario */
+.formulario {
+	max-width: 60rem;
+	margin: 0 auto;
+	fieldset {
+		border: 1px solid black;
+		margin-bottom: 2rem;
+	}
+	legend {
+		color: transparent;
+		background: linear-gradient(to right, #56f43e 0%, #037bc0 100% );
+		width: 100%;
+		text-align: center;
+		color: $blanco;
+		text-transform: uppercase;
+		font-weight: 900;
+		padding: 1rem;
+		margin-bottom: 4rem;
+	}
+}
+.campo {
+	display: flex;
+	margin-bottom: 2rem;
+	label {
+		flex-basis: 10rem;
+	}
+	input {
+		&:not([type="radio"]) {
+			flex: 1;
+			border: 1px solid #e1e1e1;
+			padding: 1rem;
+		}
+	}
+	textarea {
+		flex: 1;
+		border: 1px solid #e1e1e1;
+		padding: 1rem;
+	}
+	select {
+		flex: 1;
+		border: 1px solid #e1e1e1;
+		padding: 1rem;
+	}
+}
+.btn {
+	svg {
+		margin-right: 10px;
+	}
+}

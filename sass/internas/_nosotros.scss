@@ -1,0 +1,41 @@
+
+/** Nosotros */
+@media (min-width: 768px) {
+	.contenedor-blog {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		column-gap: 4rem;
+	}
+	.entrada {
+		h2 {
+			text-align: left;
+		}
+	}
+	.entrada-meta {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.entrada {
+	border-bottom: 2px solid #e1e1e1;
+	margin-bottom: 2rem;
+	padding-bottom: 4rem;
+	h2 {
+		text-align: center;
+	}
+	&:last-of-type {
+		border: none;
+	}
+}
+.contenido-blog {
+	padding: 2rem;
+}
+.entrada-meta {
+	p {
+		font-weight: bold;
+	}
+}
+.contenido-entrada-blog {
+	width: 60rem;
+	margin: 0 auto;
+}

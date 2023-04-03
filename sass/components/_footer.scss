@@ -1,0 +1,44 @@
+
+
+/** Footer **/
+.site-footer {
+	background-image: url(../img/posible-footer.webp);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	color: $blanco;
+	border-top: 1px solid #e1e1e1;
+	margin-top: 5rem;
+	padding-top: 5rem;
+	h3 {
+		margin-bottom: .5rem;
+		text-align: center;
+	}
+}
+.maps {
+	margin-top: 1rem;
+}
+.footer-menu {
+	a {
+		color: $blanco;
+		display: block;
+		text-align: center;
+	}
+}
+@media (min-width: 768px) {
+	.site-footer {
+		h3 {
+			text-align: left;
+		}
+	}
+	.grid-footer {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
+	}
+	.footer-menu {
+		a {
+			text-align: left;
+		}
+	}
+}

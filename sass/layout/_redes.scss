@@ -1,0 +1,58 @@
+
+/* Redes sociales */
+.sociales {
+	margin: 2rem 0;
+	display: flex;
+	justify-content: flex-end;
+}
+.sociales__enlace {
+	margin-left: 5rem;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2rem;
+		height: 2rem;
+		background-size: contain;
+	}
+}
+.sociales__enlace[href*="facebook.com"] {
+	&::before {
+		background-image: url(../img/facebook-color-svgrepo-com.svg);
+	}
+}
+.sociales__enlace[href*="twitter.com"] {
+	&::before {
+		background-image: url(../img/twitter-color-svgrepo-com.svg);
+	}
+}
+.sociales__enlace[href*="instagram.com"] {
+	&::before {
+		background-image: url(../img/instagram-1-svgrepo-com.svg);
+	}
+}
+.sociales__enlace[href*="tiktok.com"] {
+	&::before {
+		background-image: url(../img/tiktok-icon-white-1-logo-svgrepo-com.svg);
+	}
+}
+.sociales__accesible {
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	display: block;
+}
+@media only screen and (max-width: 768px) {
+	.sociales {
+		justify-content: center;
+	}
+	.sociales__enlace {
+		margin-left: 5rem;
+	}
+}

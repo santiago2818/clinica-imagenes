@@ -8,11 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../fontello.css/">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1 class="nombre-sitio degradado">Clinica de  Imagenes </h1>
+    <header class="header contenedor">
+        <div class="header__grid">
+            <h1 class="nombre-sitio degradado">Clinica de  Imagenes </h1>
+    
+            <nav class="sociales">
+                <a class="sociales__enlace" href="https://facebook.com">
+                    <span class="sociales__accesible">Facebook</span>
+                </a>
+                <a class="sociales__enlace" href="https://twitter.com">
+                    <span class="sociales__accesible">Twitter</span>
+                </a>
+                <a class="sociales__enlace" href="https://instagram.com">
+                    <span class="sociales__accesible">Instagram</span>
+                </a>
+                
+                <a class="sociales__enlace" href="https://tiktok.com">
+                    <span class="sociales__accesible">TikTok</span>
+                </a>
+            </nav>
+        </div>
     </header>
 
     <div class="contenedor-navegacion">
@@ -20,10 +40,17 @@
             <a href="../index.html">Inicio</a>
             <a href="nosotros.html">Nosotros</a>
             <a href="especialidades.html">Especialidades</a>
-            <a href="/pages/sedes.html">Sedes</a>
+            <a href="sedes.html">Sedes</a>
             <a href="turnos.html">Turnos</a>
         </nav>
     </div> 
+
+    <div class="contenedor-btn">
+        <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+            <i class="fa fa-whatsapp icono"></i>
+        </a>
+    </div> 
+    <!-- Boton Whatsapp -->
 
 <main class="contenedor-sede mt-5">
     <h2 class="text-center">Conoce Nuestras  Sedes</h2>
@@ -31,7 +58,8 @@
     <div class="sede buenos-aires">
         <div class="contenido-sede">
             <h3>Sede Buenos Aires</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, odit? Distinctio iure temporibus ab repellendus iste reiciendis accusantium nostrum, sit, cum accusamus omnis tempora facilis facere, pariatur ad repellat ex!</p>
+            <p> Nuestra sede en Buenos Aires cuenta con tecnología de última generación, como resonancia magnética de 3 teslas, tomografía de 64 cortes y ecografía doppler color, 
+                y un equipo médico altamente capacitado para garantizar un servicio de excelencia en diagnóstico y prevención de enfermedades.</p>
             <a href="#" class="btn">Más Información</a>
         </div>
     </div> <!--.Sede-->
@@ -39,7 +67,8 @@
     <div class="sede caracas">
         <div class="contenido-sede">
             <h3>Sede Caracas</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, odit? Distinctio iure temporibus ab repellendus iste reiciendis accusantium nostrum, sit, cum accusamus omnis tempora facilis facere, pariatur ad repellat ex!</p>
+            <p> En nuestra sede en Caracas contamos con la tecnología más avanzada en diagnóstico por imágenes, como el tomógrafo de doble energía y la mamografía digital con tomosíntesis,
+                 y un equipo de profesionales altamente capacitados para brindar una atención personalizada y de calidad</p>
             <a href="#" class="btn">Más Información</a>
         </div>
     </div> <!--.Sede-->
@@ -47,7 +76,8 @@
     <div class="sede sao-paulo">
         <div class="contenido-sede">
             <h3>Sede Sao Paulo</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, odit? Distinctio iure temporibus ab repellendus iste reiciendis accusantium nostrum, sit, cum accusamus omnis tempora facilis facere, pariatur ad repellat ex!</p>
+            <p>En nuestra sede en Sao Paulo, contamos con equipos de última generación como el resonador magnético de 1,5 teslas y tomógrafo de 64 cortes, y un equipo médico altamente 
+                capacitado en la interpretación de imágenes médicas y la atención al paciente, ofreciendo un ambiente confortable y seguro para la realización de los estudios médicos</p>
             <a href="#" class="btn">Más Información</a>
         </div>
     </div> <!--.Sede-->

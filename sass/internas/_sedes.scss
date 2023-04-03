@@ -1,0 +1,60 @@
+
+
+/* Pagina Sedes */
+.contenedor-sede {
+	max-width: 120rem;
+	margin: 0 auto;
+	width: 90%;
+}
+.mt-5 {
+	margin-top: 5rem;
+}
+.sede {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 70rem;
+	margin-bottom: 5rem;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+.contenido-sede {
+	padding: 5rem;
+	background-color: $blanco;
+}
+.buenos-aires {
+	background-image: url(../img/sede-4.webp);
+}
+.caracas {
+	background-image: url(../img/sede-3.webp);
+	.contenido-sede {
+		grid-column: 2 / 3;
+		padding: 2rem;
+	}
+}
+.sao-paulo {
+	background-image: url(../img/sede-1.webp);
+}
+@media (min-width: 768px) {
+	.sede {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.buenos-aires {
+		background-position: top right;
+		.contenido-sede {
+			grid-row: 2 / 3;
+			padding: 2rem 2rem 2rem 0;
+		}
+	}
+	.caracas {
+		background-position: center left;
+	}
+	.sao-paulo {
+		background-position: top right;
+		.contenido-sede {
+			padding: 2rem 2rem 2rem 0;
+		}
+	}
+}

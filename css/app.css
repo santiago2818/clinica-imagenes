@@ -66,11 +66,22 @@ img {
     text-align: center;
     border: none;
     width: 100%;
+    
 }
 .btn:hover {
     background-color: #aebd2d;
     cursor: pointer;
 }
+.btn span {
+    margin-right: 8px;
+  }
+  
+  .btn svg {
+    width: 18px;
+    height: 18px;
+    margin-left: 4px;
+    fill: #fff;
+  }
 @media (min-width: 768px) {
     .btn {
         width: auto;
@@ -87,7 +98,95 @@ img {
     }
 }
 
+/* btn whatsapp */
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
 
+
+/* Redes sociales */
+.sociales {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .sociales__enlace {
+    margin-left: 5rem;
+    position: relative;
+  }
+  
+  .sociales__enlace::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+  }
+  
+  .sociales__enlace[href*="facebook.com"]::before {
+    background-image: url(../img/facebook-color-svgrepo-com.svg);
+  }
+  
+  .sociales__enlace[href*="twitter.com"]::before {
+    background-image: url(../img/twitter-color-svgrepo-com.svg);
+  }
+  
+  .sociales__enlace[href*="instagram.com"]::before {
+    background-image: url(../img/instagram-1-svgrepo-com.svg);
+  }
+  
+  .sociales__enlace[href*="tiktok.com"]::before {
+    background-image: url(../img/tiktok-icon-white-1-logo-svgrepo-com.svg);
+  }
+  
+  .sociales__accesible {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    display: block;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .sociales {
+      justify-content: center;
+    }
+    
+    .sociales__enlace {
+      margin-left: 5rem;
+    }
+  }
+  
+  
 /** Header y Navegacion **/
 .nombre-sitio {
     margin-top: 5rem;
@@ -111,12 +210,32 @@ img {
     align-items: center;
     
 }
-.nav-principal a:hover {
-    background: linear-gradient(to right, #56f43e  0%,  #037bc0 100% );
-    color: #FFFFFF;
-    border-bottom-right-radius: .5rem ;
-}
+.nav-principal a {
+    position: relative;
+    display: block;
+    padding: 5px;
+  }
 
+.nav-principal a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #56f43e  0%,  #037bc0 100% );
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  .nav-principal a:hover::before {
+    transform: scaleX(1);
+    color: #FFFFFF;
+  }
+  .nav-principal[data-animation="center"] a::before {
+    transform-origin: center;
+  }
 @media (min-width: 768px) {
     .nav-principal{
         justify-content: space-between;
@@ -124,7 +243,7 @@ img {
     }
 }
 .hero {
-    background-image: url(../img/servicio-tomografia.jpg);
+    background-image: url(../img/posible-hero-new-2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -150,6 +269,7 @@ img {
 }
 .categoria img {
 width: 100%;
+height: 100%;
 }
 .categoria a {
     text-align: center;
@@ -162,12 +282,20 @@ width: 100%;
     color: #FFFFFF;
     border-bottom-right-radius: 1rem;
 }
+
 @media (min-width: 768px) {
     .listado-categorias {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+        transition-property: transform background-size ;
+        transition-duration: .3s;
+        
     }
+}
+.categoria :hover {
+    transform: scale(1.1);
+    background-size: 30rem;
 }
 
 
@@ -248,7 +376,7 @@ width: 100%;
 
 /** Footer **/
 .site-footer {
-    background-image: url(../img/posible-footer.jpg);
+    background-image: url(../img/posible-footer.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -290,6 +418,51 @@ width: 100%;
     }
 }
 
+/** Nosotros */
+@media (min-width: 768px) {
+    .contenedor-blog {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada {
+    border-bottom: 2px solid #e1e1e1;
+    margin-bottom: 2rem;
+    padding-bottom: 4rem;
+}
+.entrada h2{
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .entrada h2 {
+        text-align: left;
+    }
+}
+.contenido-blog {
+    padding: 2rem;
+}
+.entrada:last-of-type {
+    border: none;
+}
+@media (min-width: 768px) {
+    .entrada-meta {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.entrada-meta p {
+    font-weight: bold;
+}
+
+.contenido-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
+}
+
+
 
 /* Formulario */
 
@@ -329,6 +502,9 @@ width: 100%;
     border: 1px solid #e1e1e1;
     padding: 1rem;
 }
+.btn svg {
+    margin-right: 10px;
+  }
 
 /* Pagina Sedes */
 .contenedor-sede {
@@ -363,7 +539,7 @@ width: 100%;
 }
 
 .buenos-aires  {
-    background-image: url(../img/sede-4.jpg);
+    background-image: url(../img/sede-4.webp);
     
    
 }
@@ -378,7 +554,7 @@ width: 100%;
 }
 
 .caracas {
-    background-image: url(../img/sede-3.jpg);
+    background-image: url(../img/sede-3.webp);
   
 }
 @media (min-width: 768px) {
@@ -391,9 +567,11 @@ width: 100%;
     padding: 2rem;
 }
 .sao-paulo {
-    background-image: url(../img/sede-1.jpg);
+    background-image: url(../img/sede-1.webp);
+    
     
 }
+
 @media (min-width: 768px) {
     .sao-paulo {
         background-position: top right;

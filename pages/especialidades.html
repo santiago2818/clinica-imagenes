@@ -4,26 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinica"img</title>
+    <title>Clinica-img</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../fontello.css/">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1 class="nombre-sitio degradado">Clinica de Imagenes </h1>
+    <header class="header contenedor">
+        <div class="header__grid">
+            <h1 class="nombre-sitio degradado">Clinica de  Imagenes </h1>
+    
+            <nav class="sociales">
+                <a class="sociales__enlace" href="https://facebook.com">
+                    <span class="sociales__accesible">Facebook</span>
+                </a>
+                <a class="sociales__enlace" href="https://twitter.com">
+                    <span class="sociales__accesible">Twitter</span>
+                </a>
+                <a class="sociales__enlace" href="https://instagram.com">
+                    <span class="sociales__accesible">Instagram</span>
+                </a>
+                
+                <a class="sociales__enlace" href="https://tiktok.com">
+                    <span class="sociales__accesible">TikTok</span>
+                </a>
+            </nav>
+        </div>
     </header>
     
     <div class="contenedor-navegacion">
         <nav class="nav-principal contenedor">
             <a href="../index.html">Inicio</a>
             <a href="nosotros.html">Nosotros</a>
-            <a href="pages/especialidades.html">Especialidades</a>
+            <a href="especialidades.html">Especialidades</a>
             <a href="sedes.html">Sedes</a>
             <a href="turnos.html">Turnos</a>
         </nav>
     </div>
+<div class="contenedor-btn">
+    <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+	    <i class="fa fa-whatsapp icono"></i>
+	</a>
+</div>
 
     
     <main class="contenido-principal contenedor ">
@@ -31,7 +56,7 @@
         
         <div class="listado-productos">
             <div class="producto">
-                <img src="../img/servicio-laboratorio.jpg" alt="Imagen Producto" >
+                <img src="../img/servicio-laboratorio.webp" alt="Imagen Producto" >
 
                 <div class="texto-producto">
                     <h3>Labotatorio</h3>
@@ -39,67 +64,133 @@
                          prevención de enfermedades. Contacte con nosotros para programar su cita..</p>
                 
 
-                    <a class="btn" href="/pages/turnos.html">Agendar Turno</a>
+                         <a class="btn" href="/pages/turnos.html">
+                            <span>Agendar Turno</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-minus" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <rect x="4" y="5" width="16" height="16" rx="2" />
+                              <line x1="16" y1="3" x2="16" y2="7" />
+                              <line x1="8" y1="3" x2="8" y2="7" />
+                              <line x1="4" y1="11" x2="20" y2="11" />
+                              <line x1="10" y1="16" x2="14" y2="16" />
+                            </svg>
+                          </a>
+                          
                 </div> <!-- Info Especialiad -->
             </div> <!-- Especialidad -->
 
             <div class="producto">
-                <img src="../img/servicio-radiologia2.jpg" alt="Imagen Producto" >
+                <img src="../img/servicio-radiologia2.webp" alt="Imagen Producto" >
 
                 <div class="texto-producto">
                     <h3>Radiologia</h3>
                     <p>Ofrecemos servicios de Radiologia  son muy buenas para detectar problemas óseos. Pueden mostrar algunos órganos y tejidos blandos;.
                         Contacte con nosotros para programar su cita.</p>
 
-                    <a class="btn" href="/pages/turnos.html">Agendar Turno</a>
+                        <a class="btn" href="/pages/turnos.html">
+                            <span>Agendar Turno</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-minus" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <rect x="4" y="5" width="16" height="16" rx="2" />
+                              <line x1="16" y1="3" x2="16" y2="7" />
+                              <line x1="8" y1="3" x2="8" y2="7" />
+                              <line x1="4" y1="11" x2="20" y2="11" />
+                              <line x1="10" y1="16" x2="14" y2="16" />
+                            </svg>
+                          </a>
+                          
                 </div> <!-- Info Especialidad -->
             </div> <!-- Especialidad -->
 
             <div class="producto">
-                <img src="../img/servicio-mamografia.jpg" alt="Imagen Producto" >
+                <img src="../img/servicio-mamografia.webp" alt="Imagen Producto" >
 
                 <div class="texto-producto">
                     <h3>Mamografia</h3>
                     <p>Ofrecemos servicios de mamografía digital para el diagnóstico y detección temprana del cáncer de mama.
                          Contacte con nosotros para programar su cita.</p>
 
-                    <a class="btn" href="/pages/turnos.html">Agendar Turno</a>
+                         <a class="btn" href="/pages/turnos.html">
+                            <span>Agendar Turno</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-minus" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <rect x="4" y="5" width="16" height="16" rx="2" />
+                              <line x1="16" y1="3" x2="16" y2="7" />
+                              <line x1="8" y1="3" x2="8" y2="7" />
+                              <line x1="4" y1="11" x2="20" y2="11" />
+                              <line x1="10" y1="16" x2="14" y2="16" />
+                            </svg>
+                          </a>
+                          
                 </div> <!-- Info Especialidad -->
             </div> <!-- Especialiad -->
 
             <div class="producto">
-                <img src="../img/servicio-resonancia1.jpg" alt="Imagen Producto" >
+                <img src="../img/servicio-resonancia1.webp" alt="Imagen Producto" >
 
                 <div class="texto-producto">
                     <h3>Resonancia</h3>
                     <p>Ofrecemos servicios de resonancia magnética (MRI) para la obtención de imágenes detalladas  sin el
                          uso de radiación.Contacte con nosotros para programar su cita.</p>
 
-                    <a class="btn" href="/pages/turnos.html">Agendar Turno</a>
+                         <a class="btn" href="/pages/turnos.html">
+                            <span>Agendar Turno</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-minus" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <rect x="4" y="5" width="16" height="16" rx="2" />
+                              <line x1="16" y1="3" x2="16" y2="7" />
+                              <line x1="8" y1="3" x2="8" y2="7" />
+                              <line x1="4" y1="11" x2="20" y2="11" />
+                              <line x1="10" y1="16" x2="14" y2="16" />
+                            </svg>
+                          </a>
+                          
                 </div> <!-- Info Especialidad -->
             </div> <!-- Especialidad -->
 
             <div class="producto">
-                <img src="../img/servicio-ecografia.jpg" alt="Imagen Producto" >
+                <img src="../img/servicio-ecografia.webp" alt="Imagen Producto" >
 
                 <div class="texto-producto">
                     <h3>Ecografia</h3>
                     <p>Realizamos ecografías para la obtención de imágenes detalladas de órganos y tejidos blandos del cuerpo.
                         Contacte con nosotros para programar su cita.</p>
 
-                    <a class="btn" href="/pages/turnos.html">Agendar Turno</a>
+                        <a class="btn" href="/pages/turnos.html">
+                            <span>Agendar Turno</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-minus" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <rect x="4" y="5" width="16" height="16" rx="2" />
+                              <line x1="16" y1="3" x2="16" y2="7" />
+                              <line x1="8" y1="3" x2="8" y2="7" />
+                              <line x1="4" y1="11" x2="20" y2="11" />
+                              <line x1="10" y1="16" x2="14" y2="16" />
+                            </svg>
+                          </a>
+                          
                 </div> <!-- Info Especialidad -->
             </div> <!-- Especialidad -->
 
             <div class="producto">
-                <img src="../img/servicio-tomografia-posible-portada.jpg" alt="Imagen Producto" >
+                <img src="../img/servicio-tomografia-posible-portada.webp" alt="Imagen Producto" >
 
                 <div class="texto-producto">
                     <h3>Tomografia</h3>
                     <p>Realizamos tomografías computarizadas (CT) para la obtención de imágenes detalladas del cuerpo. Contacte 
                     con nosotros para programar su cita.</p>
 
-                    <a class="btn" href="/pages/turnos.html">Agendar Turno</a>
+                    <a class="btn" href="/pages/turnos.html">
+                        <span>Agendar Turno</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-minus" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <rect x="4" y="5" width="16" height="16" rx="2" />
+                          <line x1="16" y1="3" x2="16" y2="7" />
+                          <line x1="8" y1="3" x2="8" y2="7" />
+                          <line x1="4" y1="11" x2="20" y2="11" />
+                          <line x1="10" y1="16" x2="14" y2="16" />
+                        </svg>
+                      </a>
+                      
                 </div> <!-- Info Especialidad -->
             </div> <!-- Especialidad -->
 

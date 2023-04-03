@@ -8,56 +8,76 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../fontello.css/">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1 class="nombre-sitio degradado">Clinica de  Imagenes </h1>
+    <header class="header contenedor">
+        <div class="header__grid">
+            <h1 class="nombre-sitio degradado">Clinica de  Imagenes </h1>
+    
+            <nav class="sociales">
+                <a class="sociales__enlace" href="https://facebook.com">
+                    <span class="sociales__accesible">Facebook</span>
+                </a>
+                <a class="sociales__enlace" href="https://twitter.com">
+                    <span class="sociales__accesible">Twitter</span>
+                </a>
+                <a class="sociales__enlace" href="https://instagram.com">
+                    <span class="sociales__accesible">Instagram</span>
+                </a>
+                
+                <a class="sociales__enlace" href="https://tiktok.com">
+                    <span class="sociales__accesible">TikTok</span>
+                </a>
+            </nav>
+        </div>
     </header>
     
     <div class="contenedor-navegacion">
         <nav class="nav-principal contenedor">
             <a href="../index.html">Inicio</a>
-            <a href="pages/nosotros.html">Nosotros</a>
+            <a href="nosotros.html">Nosotros</a>
             <a href="especialidades.html">Especialidades</a>
             <a href="sedes.html">Sedes</a>
             <a href="turnos.html">Turnos</a>
         </nav>
-    </div>
 
-
-    <main class="container-xl py-5">
-        <h2 class="text-center my-5">Sobre Nosotros</h2>
-
-        <div class="row justify-content-md-center">
-            <article class="col-md-8">
-                <img class="img-fluid" src="../img/sobre-nosotros.jpg" alt="imagen nosotros">
-
-                <div class="d-flex flex-column flex-md-row justify-content-md-between py-4">
-                    
-                    <p class="fw-bold">Junta Directiva: 
-                        <span class="text-black">Clinica Imagenes</span> 
-                    </p>
+        <div class="contenedor-btn">
+            <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+                <i class="fa fa-whatsapp icono"></i>
+            </a>
+        </div>
+       
+        <main class="contenido-principal contenedor ">
+            <h2 class="text-center">Sobre Nosotros</h2>
+    
+            <article class="entrada contenido-entrada-blog">
+                <div class="imagen">
+                    <img src="../img/sobre-nosotros.webp" alt="imagen blog">
                 </div>
+    
+                <div class="entrada-meta">
+                    <p>Junta Directiva Clinica de Imagenes</p>
+                    
+                </div>
+    
+                <div class="entrada-blog">
+                   
+                   <p> "Nuestra clínica de imágenes cuenta con más de 30 años de experiencia en el diagnóstico y prevención de enfermedades, a través de una amplia gama de estudios médicos de alta complejidad, como la ecografía, tomografía, mamografía y resonancia magnética.</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias dolores dolor sit repellendus voluptatum deserunt necessitatibus modi, ipsa laudantium error maxime assumenda recusandae possimus labore repellat cum obcaecati dicta?</p>
+                   <p>Para garantizar la calidad y precisión en nuestros diagnósticos, utilizamos tecnología de última generación, como equipos de resonancia magnética de 3 teslas y tomógrafos de 64 cortes. Además, contamos con un equipo de profesionales altamente capacitados en la interpretación de imágenes médicas y la atención al paciente.</p> 
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore similique sequi dicta, voluptates odio tenetur adipisci reiciendis nemo esse fuga sint expedita laudantium aspernatur, quae hic repellendus perferendis inventore repudiandae?</p>
+                   <p> En nuestra clínica, nos esforzamos por brindar una atención personalizada y cálida a nuestros pacientes, ofreciendo un ambiente confortable y seguro para el desarrollo de los estudios médicos.</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias dolores dolor sit repellendus voluptatum deserunt necessitatibus modi, ipsa laudantium error maxime assumenda recusandae possimus labore repellat cum obcaecati dicta?</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore similique sequi dicta, voluptates odio tenetur adipisci reiciendis nemo esse fuga sint expedita laudantium aspernatur, quae hic repellendus perferendis inventore repudiandae?</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias dolores dolor sit repellendus voluptatum deserunt necessitatibus modi, ipsa laudantium error maxime assumenda recusandae possimus labore repellat cum obcaecati dicta?</p>
-
-               
-                
+                   <p>Gracias a nuestra larga trayectoria y constante actualización en tecnología y conocimientos médicos, nos hemos consolidado como una empresa líder en el sector de la salud, comprometidos en mejorar la calidad de vida de nuestros pacientes y contribuir en la prevención y detección temprana de enfermedades."</p> 
+                   
+                </div>
             </article>
             
-        </div>
-    </main>
-    <!-- En este main se aplico bootstrap -->
+        </main>
+    
 
     <footer class="site-footer">
         <div class="grid-footer contenedor">
@@ -110,6 +130,6 @@
         
     </footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>

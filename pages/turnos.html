@@ -8,22 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../fontello.css/">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1 class="nombre-sitio degradado">Clinica de  Imagenes </h1>
-    </header>
+    <header class="header contenedor">
+        <div class="header__grid">
+            <h1 class="nombre-sitio degradado">Clinica de  Imagenes </h1>
     
+            <nav class="sociales">
+                <a class="sociales__enlace" href="https://facebook.com">
+                    <span class="sociales__accesible">Facebook</span>
+                </a>
+                <a class="sociales__enlace" href="https://twitter.com">
+                    <span class="sociales__accesible">Twitter</span>
+                </a>
+                <a class="sociales__enlace" href="https://instagram.com">
+                    <span class="sociales__accesible">Instagram</span>
+                </a>
+                
+                <a class="sociales__enlace" href="https://tiktok.com">
+                    <span class="sociales__accesible">TikTok</span>
+                </a>
+            </nav>
+        </div>
+    </header>
     <div class="contenedor-navegacion">
         <nav class="nav-principal contenedor">
             <a href="../index.html">Inicio</a>
             <a href="nosotros.html">Nosotros</a>
             <a href="especialidades.html">Especialidades</a>
             <a href="sedes.html">Sedes</a>
-            <a href="pages/turnos.html">Turnos</a>
+            <a href="turnos.html">Turnos</a>
         </nav>
     </div>
+
+    <div class="contenedor-btn">
+        <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+            <i class="fa fa-whatsapp icono"></i>
+        </a>
+    </div>
+
 
 
     
@@ -110,7 +136,17 @@
 
             </fieldset>
 
-            <input class="btn" type="submit" value="Enviar Formulario" >
+            <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" />
+                    <path d="M3 6l9 6l9 -6" />
+                    <path d="M15 18h6" />
+                    <path d="M18 15l3 3l-3 3" />
+                  </svg>
+                Enviar Formulario
+              </button>
+              
         </form>
         
     </main>

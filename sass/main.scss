@@ -1,0 +1,28 @@
+// abstracts//
+
+@import './abstracts/variables';
+
+// Base //
+
+@import './base/reset';
+@import './base/globales';
+@import './base/btn';
+
+//layout//
+
+@import './layout/header';
+@import './layout/redes';
+
+//components//
+
+@import './components/categorias';
+@import './components/especialidades';
+@import './components/footer';
+
+//internas//
+
+@import './internas/nosotros';
+@import './internas/turnos.scss';
+@import './internas/sedes'
+
+
