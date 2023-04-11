@@ -407,7 +407,7 @@ height: 100%;
 
 
 
-.footer-menu a {
+.footer-menu  a {
     color: #FFFFFF;
     display: block;
     text-align: center;
@@ -419,11 +419,21 @@ height: 100%;
 }
 
 /** Nosotros */
+.mask {
+    overflow: hidden;
+}
+.imagen-blog {
+    max-width: 100%;
+    height: auto;
+}
+
 @media (min-width: 768px) {
     .contenedor-blog {
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }
 
@@ -432,20 +442,25 @@ height: 100%;
     margin-bottom: 2rem;
     padding-bottom: 4rem;
 }
-.entrada h2{
+
+.entrada h2 {
     text-align: center;
 }
+
 @media (min-width: 768px) {
     .entrada h2 {
         text-align: left;
     }
 }
+
 .contenido-blog {
     padding: 2rem;
 }
+
 .entrada:last-of-type {
     border: none;
 }
+
 @media (min-width: 768px) {
     .entrada-meta {
         display: flex;
@@ -462,7 +477,11 @@ height: 100%;
     margin: 0 auto;
 }
 
-
+@media (max-width: 767px) {
+    .contenido-principal {
+        overflow-x: hidden;
+    }
+}
 
 /* Formulario */
 
@@ -580,4 +599,34 @@ height: 100%;
         padding: 2rem 2rem 2rem 0;
     }
 }
+/* Pagina   Novedades */
+.novedades-clinica {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 4rem;
+}
 
+.novedades-clinica img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 2rem;
+}
+
+.informacion-novedades {
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .informacion-novedades {
+        padding: 0 2rem;
+    }
+
+    .novedades-clinica {
+        grid-template-columns: 1fr 2fr;
+    }
+}
